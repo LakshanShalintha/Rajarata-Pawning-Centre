@@ -34,10 +34,10 @@
             <div class="w-1/3 text-right">
                 <h3 class="text-xl font-bold mb-2">Pages</h3>
                 <ul class="list-none p-0">
-                    <li class="my-1"><a href="#" class="text-white">Home</a></li>
-                    <li class="my-1"><a href="#" class="text-white">About</a></li>
-                    <li class="my-1"><a href="#" class="text-white">Service</a></li>
-                    <li class="my-1"><a href="#" class="text-white">Contact</a></li>
+                    <li class="my-1"><a href="/" class="text-white">Home</a></li>
+                    <li class="my-1"><a href="/about" class="text-white">About</a></li>
+                    <li class="my-1"><a href="/services" class="text-white">Service</a></li>
+                    <li class="my-1"><a href="/contact" class="text-white">Contact</a></li>
                 </ul>
             </div>
         </div>
