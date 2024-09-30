@@ -47,8 +47,36 @@
     <div class="container mt-5 contact-container">
     <h1>Contact Us</h1>
 
-    <form>
-
+    <!-- Contact Form -->
+    <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control @error('firstName') is-invalid @enderror" id="firstName" name="firstName" value="{{ old('firstName') }}" required>
+                @error('firstName')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control @error('lastName') is-invalid @enderror" id="lastName" name="lastName" value="{{ old('lastName') }}" required>
+                @error('lastName')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" required>
+                @error('email')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control @error('message') is-invalid @enderror" id="message" name="message" rows="4" required>{{ old('message') }}</textarea>
+                @error('message')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
 
