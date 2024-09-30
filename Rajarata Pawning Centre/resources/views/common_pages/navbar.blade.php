@@ -3,10 +3,10 @@
 <style>
     /* Custom CSS for Navbar */
     .custom-margin {
-        margin-left: 150px; /* Set left margin to 150px for RPC */
+        margin-left: 120px; /* Set left margin to 150px for RPC */
     }
     .logo-margin {
-        margin-right: 150px; /* Set right margin to 150px for logo */
+        margin-right: 120px; /* Set right margin to 150px for logo */
         height: 60px;
         width: 60px; /* Adjust logo height and width as needed */
     }

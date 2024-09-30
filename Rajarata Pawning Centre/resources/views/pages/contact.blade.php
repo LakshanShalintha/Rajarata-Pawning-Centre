@@ -47,6 +47,7 @@
     <div class="container mt-5 contact-container">
     <h1>Contact Us</h1>
 
+
     <!-- Contact Form -->
     <div class="mb-3">
                 <label for="firstName" class="form-label">First Name</label>
@@ -97,5 +98,10 @@
 
     <!-- Include Bootstrap JS -->
     <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <p>Contact information and form go here...</p>
+
+    <!-- Include the Footer -->
+    @include('common_pages.footer')
+
 </body>
 </html>

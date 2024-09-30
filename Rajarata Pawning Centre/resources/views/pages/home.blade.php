@@ -1,4 +1,3 @@
-<!-- resources/views/home.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,7 +67,34 @@
             background-color: white;
             width: 50px;
             height: 7px;
-            border-radius: 10%;
+            border-radius: 20px;
+        }
+
+        /* Style for the 9-grid section */
+        .grid-section {
+            margin-top: 30px;
+        }
+
+        .grid-item {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 10px auto;
+            border-radius: 20px; /* Rounded corners for the grid shapes */
+            position: relative;
+        }
+
+        /* Styling for gradient border on the grid shapes */
+        .grid-item::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            background: linear-gradient(45deg, #ff6b6b, #f3ff0a, #2ecc71, #3498db);
+            border-radius: 21px;
+            z-index: -1;
         }
     </style>
 </head>
@@ -78,12 +104,13 @@
     @include('common_pages.navbar')
 
     <!-- Main Content -->
-    <div class="container mt-5">
-        <h1>Home</h1>
+    <div class="container mt-5 ">
+        <h1 class="text-left mb-8" style="font-size: 64px">Home</h1>
+
 
         <!-- Add the Shapes with Images -->
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 container">
                 <div class="shape shape1">
                     <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Image 1">
                 </div>
@@ -109,6 +136,19 @@
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
+        </div>
+
+        <!-- New Grid Section (3 Columns, 9 Grid Items) -->
+        <div class="row grid-section justify-content-center ">
+            <div class="col-md-4 grid-item"></div>
+            <div class="col-md-4 grid-item"></div>
+            <div class="col-md-4 grid-item"></div>
+            <div class="col-md-4 grid-item"></div>
+            <div class="col-md-4 grid-item"></div>
+            <div class="col-md-4 grid-item"></div>
+            <div class="col-md-4 grid-item"></div>
+            <div class="col-md-4 grid-item"></div>
+            <div class="col-md-4 grid-item"></div>
         </div>
     </div>
 
@@ -142,6 +182,8 @@
         // Set interval to show the next shape every 3 seconds
         setInterval(showNextShape, 3000);
     </script>
-
+         <!-- Include the Footer -->
+    @include('common_pages.footer')
+</body>
 </body>
 </html>
