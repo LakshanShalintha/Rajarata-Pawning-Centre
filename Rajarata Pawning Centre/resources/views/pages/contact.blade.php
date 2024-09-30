@@ -9,5 +9,8 @@
 <body>
     <h1>Contact Us</h1>
     <p>Contact information and form go here...</p>
+
+    <!-- Include the Footer -->
+    @include('common_pages.footer')
 </body>
 </html>
