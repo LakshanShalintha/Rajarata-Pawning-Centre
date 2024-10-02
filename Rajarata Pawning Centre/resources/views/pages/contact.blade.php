@@ -10,32 +10,81 @@
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
     <style>
         body {
-            background-color: black;
-            color: white;
+            background-color: #121212;
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            text-align: center;
+            font-family: Arial, sans-serif;
         }
 
         .contact-container {
-            max-width: 600px;
+            padding: 40px;
+            max-width: 1200px;
             margin: auto;
-            padding: 20px;
         }
 
         .form-control {
-            background-color: gray;
-            color: white;
+            background-color: #1f1f1f;
+            color: #ffffff;
+            border: 1px solid #333;
+        }
+
+        .form-control:focus {
+            border-color: #555;
+            box-shadow: none;
         }
 
         .form-control::placeholder {
-            color: lightgray;
+            color: #bbb;
         }
 
         .map {
             width: 100%;
-            height: 400px;
-            margin-top: 20px;
+            height: 300px;
+            border: 0;
+        }
+
+        .line-input {
+            display: block;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #555;
+            background-color: transparent;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .line-input:focus {
+            outline: none;
+            border-bottom-color: #888;
+        }
+
+        .line-input::placeholder {
+            color: #bbb;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .address-section {
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .address-title {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -43,10 +92,24 @@
 <body>
     <!-- Include the Navbar -->
     @include('common_pages.navbar')
-    <!-- Main Content -->
-    <div class="container mt-5 contact-container">
-    <h1>Contact Us</h1>
 
+    <!-- Main Content -->
+    <div class="container contact-container">
+        <h1 class="contact-header">Contact Us</h1>
+
+<<<<<<< HEAD
+        <div class="row">
+            <!-- Left Column - Contact Form -->
+            <div class="col-md-6 contact-form">
+                <h3>Contact Form</h3>
+                <form>
+                    <input type="text" class="line-input" id="firstName" name="firstName" placeholder="First Name" required>
+                    <input type="text" class="line-input" id="lastName" name="lastName" placeholder="Last Name" required>
+                    <input type="email" class="line-input" id="email" name="email" placeholder="Email" required>
+                    <textarea class="line-input" id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+=======
 
     <!-- Contact Form -->
     <div class="mb-3">
@@ -55,45 +118,24 @@
                 @error('firstName')
                     <div class="error">{{ $message }}</div>
                 @enderror
+>>>>>>> 16f2a71025d98f321f4088ab3dbef897868f9955
             </div>
-            <div class="mb-3">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control @error('lastName') is-invalid @enderror" id="lastName" name="lastName" value="{{ old('lastName') }}" required>
-                @error('lastName')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" required>
-                @error('email')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control @error('message') is-invalid @enderror" id="message" name="message" rows="4" required>{{ old('message') }}</textarea>
-                @error('message')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
 
+            <!-- Right Column - Address and Map -->
+            <div class="col-md-6">
+                <div class="address-section">
+                    <h3>Address</h3>
+                    <p>Rajarata Pawning Centre,</p>
+                    <p>Siripura New Town,</p>
+                    <p>Polonnaruwa,</p>
+                    <p>Sri Lanka.</p>
+                </div>
 
-<!-- Map Section -->
-<h2 class="mt-5">Our Location</h2>
-        <iframe class="map" 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0356147060277!2d144.95373531578593!3d-37.81720997975173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f95b8a3%3A0xa1b93c8f64f3c2b6!2sSiripura%20New%20Town%2C%20Polonnaruwa%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1636012222042!5m2!1sen!2slk" 
-                allowfullscreen="" 
-                loading="lazy"></iframe>
-
-        <!-- Shop Address -->
-        <h3 class="mt-5">Address</h3>
-        <p>Rajarata Pawning Centre,</p>
-        <p>Siripura New Town,</p>
-        <p>Polonnaruwa, </p>
-        <p>Sri Lanka.</p>
+                <!-- Map Section -->
+                <h3 class="address-title">Our Location</h3>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3840.30480677039!2d81.0150165750044!3d7.730503292287814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwNDMnNDkuOCJOIDgxwrAwMScwMy4zIkU!5e1!3m2!1sen!2slk!4v1727793940204!5m2!1sen!2slk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </div>
 
     <!-- Include Bootstrap JS -->
