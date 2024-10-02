@@ -97,6 +97,7 @@
     <div class="container contact-container">
         <h1 class="contact-header">Contact Us</h1>
 
+<<<<<<< HEAD
         <div class="row">
             <!-- Left Column - Contact Form -->
             <div class="col-md-6 contact-form">
@@ -108,6 +109,16 @@
                     <textarea class="line-input" id="message" name="message" rows="4" placeholder="Message" required></textarea>
                     <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </form>
+=======
+
+    <!-- Contact Form -->
+    <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control @error('firstName') is-invalid @enderror" id="firstName" name="firstName" value="{{ old('firstName') }}" required>
+                @error('firstName')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+>>>>>>> 16f2a71025d98f321f4088ab3dbef897868f9955
             </div>
 
             <!-- Right Column - Address and Map -->
@@ -129,5 +140,10 @@
 
     <!-- Include Bootstrap JS -->
     <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <p>Contact information and form go here...</p>
+
+    <!-- Include the Footer -->
+    @include('common_pages.footer')
+
 </body>
 </html>
