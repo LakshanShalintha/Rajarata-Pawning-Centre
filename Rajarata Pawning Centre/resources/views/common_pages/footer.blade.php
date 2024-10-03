@@ -17,27 +17,23 @@
     <footer class="bg-gray-800 text-white py-8 flex flex-col flex-wrap w-full">
         <div class="w-full flex justify-between items-start container">
             <div class="w-1/3 text-left">
-                <h3 class="text-xl font-bold">Rajarata Pawning Center - RCP</h3>
-                <p class="my-2 mt-4">rcp@gmail.com</p>
-                <p class="mt-3">RCP,<br>
-                    dhbgdvvsdvbhsdbvhbsdjbh
+                <h3 class="text-xl font-bold">{{ __('messages.Foot-title') }}</h3>
+                <p class="my-2 mt-4">
+                    {{ __('messages.Foot-mail') }}: <a href="mailto:rcp@gmail.com">rcp@gmail.com</a>
+                </p>
+
+                <p class="mt-3">{{ __('messages.Foot-address_1') }},<br>
+                    {{ __('messages.Foot-address_2') }}
                 </p>
             </div>
 
-            <div class="w-1/3">
-                <h3 class="text-xl font-bold mb-2">Branches</h3>
-                <p class="my-2">Branch 1: Address of Branch 1</p>
-                <p class="my-2">Branch 2: Address of Branch 2</p>
-                <p class="my-2">Branch 3: Address of Branch 3</p>
-            </div>
-
             <div class="w-1/3 text-right">
-                <h3 class="text-xl font-bold mb-2">Pages</h3>
+                <h3 class="text-xl font-bold mb-2">{{ __('messages.Foot-pages') }}</h3>
                 <ul class="list-none p-0">
-                    <li class="my-1"><a href="/" class="text-white">Home</a></li>
-                    <li class="my-1"><a href="/about" class="text-white">About</a></li>
-                    <li class="my-1"><a href="/services" class="text-white">Service</a></li>
-                    <li class="my-1"><a href="/contact" class="text-white">Contact</a></li>
+                    <li class="my-1"><a href="/" class="text-white">{{ __('messages.Foot-page_1') }}</a></li>
+                    <li class="my-1"><a href="/about" class="text-white">{{ __('messages.Foot-page_2') }}</a></li>
+                    <li class="my-1"><a href="/services" class="text-white">{{ __('messages.Foot-page_3') }}</a></li>
+                    <li class="my-1"><a href="/contact" class="text-white">{{ __('messages.Foot-page_4') }}</a></li>
                 </ul>
             </div>
         </div>
@@ -47,8 +43,13 @@
             <hr class="border-t border-white w-full">
         </div>
 
+        <!-- Author) -->
+        <div class="w-full container flex justify-start mt-2">
+            <p class="" style="color: #d3d3d3; font-size: 12px;">{{ __('messages.Foot-Author') }}</p>
+        </div>
+
         <!-- Social Media Icons (right aligned, under the line) -->
-        <div class="w-full container flex justify-end mt-2">
+        <div class="w-full container flex justify-end -mt-5">
             <a href="#" class="text-white text-2xl mx-2"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="text-white text-2xl mx-2"><i class="fab fa-whatsapp"></i></a>
             <a href="#" class="text-white text-2xl mx-2"><i class="fab fa-instagram"></i></a>

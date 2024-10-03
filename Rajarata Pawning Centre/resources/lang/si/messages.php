@@ -26,6 +26,21 @@ return [
     'About-title' => 'අපි ගැන',
     'About-description' => 'උකස් මධ්‍යස්ථානය පිළිබඳ තොරතුරු...',
 
+    /* Contact page */
+    'Contact-title' => 'අපව අමතන්න',
+    'first_name' => 'පළමු නම',
+    'last_name' => 'අවසාන නම',
+    'email' => 'විද්‍යුත් තැපෑල',
+    'contact_number' => 'දුරකථන අංකය ',
+    'message' => 'පණිවිඩය',
+    'Contact-submit' => 'ඉදිරිපත් කරන්න',
+    'Contact-address' => 'රජරට උකස් මධ්‍යස්ථානය',
+    'Contact-address_1' => 'සිරිපුර නව නගරය,',
+    'Contact-address_2' => 'පොලොන්නරු,ව',
+    'Contact-address_3' => 'ශ්‍රී ලංකාව.',
+    'Contact-location' => 'අපගේ ස්ථානය',
+
+
 
     /* Footer */
     'Foot-title' => 'රජරට උකස් මධ්‍යස්ථානය',
@@ -37,5 +52,6 @@ return [
     'Foot-page_2' => 'ගැන',
     'Foot-page_3' => 'සේවාව',
     'Foot-page_4' => 'අමතන්න',
+    'Foot-Author' =>  'ප්‍රකාශන හිමිකම RCP © 2024. සියලුම හිමිකම් ඇවිරිණි'
 
 ];

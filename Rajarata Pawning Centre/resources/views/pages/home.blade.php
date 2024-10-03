@@ -20,7 +20,7 @@
 
         /* Common style for all shapes */
         .shape {
-            height: 300px; /* Adjusted height for better appearance */
+            height: 550px; /* Adjusted height for better appearance */
             border-radius: 20px; /* Rounded corners */
             display: none; /* Hide all shapes by default */
             transition: opacity 0.5s ease; /* Smooth transition */
@@ -70,15 +70,16 @@
             border-radius: 20px;
         }
 
-        /* Style for the 9-grid section */
+        /* Style for the 4-grid section */
         .grid-section {
-            margin-top: 30px;
+            margin-top: 20px;
+            margin-bottom: 80px;
         }
 
         .grid-item {
-            width: 200px;
-            height: 200px;
-            background-color: red;
+            width: 300px;
+            height: 300px;
+            background-color: gray;
             margin: 10px auto;
             border-radius: 20px; /* Rounded corners for the grid shapes */
             position: relative;
@@ -104,10 +105,7 @@
     @include('common_pages.navbar')
 
     <!-- Main Content -->
-    <div class="container mt-5 ">
-        <h1 class="text-left mb-8" style="font-size: 64px">Home</h1>
-
-
+    <div class="container mt-xxl-5 ">
         <!-- Add the Shapes with Images -->
         <div class="row">
             <div class="col-md-12 container">
@@ -138,18 +136,106 @@
             <span class="dot"></span>
         </div>
 
-        <!-- New Grid Section (3 Columns, 9 Grid Items) -->
-        <div class="row grid-section justify-content-center ">
-            <div class="col-md-4 grid-item"></div>
-            <div class="col-md-4 grid-item"></div>
-            <div class="col-md-4 grid-item"></div>
-            <div class="col-md-4 grid-item"></div>
-            <div class="col-md-4 grid-item"></div>
-            <div class="col-md-4 grid-item"></div>
-            <div class="col-md-4 grid-item"></div>
-            <div class="col-md-4 grid-item"></div>
-            <div class="col-md-4 grid-item"></div>
+        <!-- 2-column section with image and text -->
+        <div class="row mt-40">
+            <p class="" style="font-size: 40px"> Title</p>
+            <!-- Left Column: Image -->
+            <div class="col-md-6 mt-20">
+                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Sample Image" class="img-fluid" style="border-radius: 20px;">
+            </div>
+
+            <!-- Right Column: Title and Description -->
+            <div class="col-md-6 mt-20 d-flex flex-column">
+                <h2 class="" style="font-size: 32px">Title of the Section</h2>
+                <p class="small mt-10 text-left">For a backend to complement your Next.js with TypeScript site, here are some suitable options:
+
+                    Next.js API Routes (built-in): Since Next.js provides API routes, you can handle server-side logic right within your Next.js app. This can be useful for simpler applications or when you want to keep the backend tightly integrated with your frontend.
+
+                    Advantages: Easy setup, no need for a separate backend service, works well for serverless environments.
+                    Use cases: Small to medium-sized applications, serverless functions, or when you need simple API endpoints.
+                    Node.js with Express: This is a popular combination for building a scalable backend. You can use Express to handle routes, middleware, and databases.
+
+                    Advantages: Flexibility, large ecosystem, and the ability to scale.
+                    Use cases: RESTful APIs, microservices, and when you need more control over the backend.
+                    NestJS: A TypeScript-first framework that’s built on top of Node.js and Express. It’s great for building scalable and maintainable applications.
+
+                    Advantages: TypeScript support, built-in modules for database, WebSocket, GraphQL, and microservices.
+                    Use cases: Large applications, microservices, and when you want strong TypeScript support.
+                    GraphQL with Apollo Server: If your site deals with complex data fetching needs, Apollo Server with GraphQL might be a good fit. You can query exactly the data you need from the backend.
+
+                    Advantages: Efficient data querying, real-time updates with subscriptions, works well with modern frontends.
+                    Use cases: Applications requiring fine-grained data fetching or those needing real-time data.
+                    Firebase or Supabase: If you prefer a serverless approach or don’t want to manage your own backend infrastructure, Firebase or Supabase could be suitable options. Both provide authentication, databases, file storage, and more.
+
+                    Advantages: Managed services, scalability, fast development.
+                    Use cases: MVPs, apps with real-time features, or if you prefer not to manage your backend.
+                    What specific features do you need for your backend (e.g., database, authentication, etc.)? That can help narrow down the best choice.
+                </p>
+            </div>
         </div>
+
+
+        <p class=" mt-40" style="font-size: 40px">Our Success</p>
+        <!-- New Grid Section (3 Columns, 4 Grid Items) -->
+        <div class="row grid-section justify-content-center mt-20">
+            <!-- Grid Item 1 -->
+            <div class="col-md-4 grid-item d-flex flex-column align-items-center">
+                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 1" class="img-fluid" style="border-radius: 17px; width: 100px;">
+                <h5 class="mt-3">Title 1</h5>
+                <p class="small mt-3">This is a small description for the first grid item.</p>
+            </div>
+
+            <!-- Grid Item 2 -->
+            <div class="col-md-4 grid-item d-flex flex-column align-items-center">
+                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 2" class="img-fluid" style="border-radius: 17px; width: 100px;">
+                <h5 class="mt-3">Title 2</h5>
+                <p class="small mt-3">This is a small description for the second grid item.</p>
+            </div>
+
+            <!-- Grid Item 3 -->
+            <div class="col-md-4 grid-item d-flex flex-column align-items-center">
+                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 3" class="img-fluid" style="border-radius: 17px; width: 100px;">
+                <h5 class="mt-3">Title 3</h5>
+                <p class="small mt-3">This is a small description for the third grid item.</p>
+            </div>
+
+            <!-- Grid Item 4 -->
+            <div class="col-md-4 grid-item d-flex flex-column align-items-center">
+                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 4" class="img-fluid" style="border-radius: 17px; width: 100px;">
+                <h5 class="mt-3">Title 4</h5>
+                <p class="small mt-3">This is a small description for the fourth grid item.</p>
+            </div>
+        </div>
+
+        <!-- Existing Content -->
+
+        <div class="container mt-5 mb-40">
+            <div class="row justify-content-between">
+                <!-- Left Side Title and Description -->
+                <div class="col-md-6 d-flex flex-column">
+                    <h2 class="text-center">Left Title</h2>
+                    <ul class="list-unstyled d-flex text-left">
+                        <li class="mx-1"><strong>For a backend to complement your Next.js with TypeScript site,/</strong></li>
+                        <li class="mx-1"><strong>For a backend to complement your Next.js with TypeScript site, /</strong></li>
+                        <li class="mx-1"><strong>For a backend to complement your Next.js with TypeScript site,</strong></li>
+                    </ul>
+                </div>
+
+                <!-- Right Side Red Grid with Border and Radius -->
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div style="
+                        width: 400px;
+                        height: 400px;
+                        background-color: red;
+                        border-radius: 24px;
+                        border: 1px solid;
+                    ">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <!-- Include Bootstrap JS -->
