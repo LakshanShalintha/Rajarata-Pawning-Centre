@@ -49,8 +49,9 @@
             </ul>
             <!-- Add language selection text and logo on the right side -->
             <div class="language-selector">
-                <a id="sinhala" onclick="switchLanguage('Sinhala')">Sinhala</a> <!-- Onclick event for Sinhala -->
-                <a id="english" onclick="switchLanguage('English')">English</a> <!-- Onclick event for English -->
+                <a id="english" onclick="switchLanguage('English')" href="{{ url('language/en') }}">English</a> <!-- Onclick event for English -->
+                <a id="sinhala" onclick="switchLanguage('Sinhala')" href="{{ url('language/si') }}">සිංහල</a> <!-- Onclick event for Sinhala -->
+
             </div>
             <a href="{{ route('home') }}">
                 <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Logo" class="logo-margin"> <!-- Adjust the logo path -->
