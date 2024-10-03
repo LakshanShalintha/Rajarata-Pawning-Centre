@@ -97,6 +97,24 @@
             border-radius: 21px;
             z-index: -1;
         }
+
+         ul.custom-bullets {
+             list-style: none; /* Remove default bullets */
+             margin-left: 20px; /* Space between text and edge */
+         }
+
+        ul.custom-bullets li {
+            position: relative; /* Allows positioning the custom bullet */
+            padding-left: 20px; /* Indent the list items */
+        }
+
+        ul.custom-bullets li::before {
+            content: "\2022"; /* Unicode for the bullet character */
+            position: absolute;
+            left: 0;
+            color: white; /* Set bullet color to white */
+            font-size: 1.2em; /* Adjust the bullet size */
+        }
     </style>
 </head>
 <body>
@@ -105,10 +123,10 @@
     @include('common_pages.navbar')
 
     <!-- Main Content -->
-    <div class="container mt-xxl-5 ">
+    <div class="container mt-32 ">
         <!-- Add the Shapes with Images -->
-        <div class="row">
-            <div class="col-md-12 container">
+        <div class="row col-lg-16 m-auto">
+            <div class="col col-md-14  container">
                 <div class="shape shape1">
                     <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Image 1">
                 </div>
@@ -137,103 +155,123 @@
         </div>
 
         <!-- 2-column section with image and text -->
-        <div class="row mt-40">
-            <p class="" style="font-size: 40px"> Title</p>
+        <div class="row mt-40 col-lg-10 mx-auto text-center">
+            <!-- Title -->
+            <p class="w-100" style="font-size: 40px;">{{ __('messages.Home-our-title') }}</p>
+
             <!-- Left Column: Image -->
-            <div class="col-md-6 mt-20">
-                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Sample Image" class="img-fluid" style="border-radius: 20px;">
+            <div class="col-md-6 col-lg-6 mt-20">
+                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Sample Image" class="img-fluid" style="width: 600px; height: 400px; border-radius: 20px;">
             </div>
 
             <!-- Right Column: Title and Description -->
-            <div class="col-md-6 mt-20 d-flex flex-column">
-                <h2 class="" style="font-size: 32px">Title of the Section</h2>
-                <p class="small mt-10 text-left">For a backend to complement your Next.js with TypeScript site, here are some suitable options:
-
-                    Next.js API Routes (built-in): Since Next.js provides API routes, you can handle server-side logic right within your Next.js app. This can be useful for simpler applications or when you want to keep the backend tightly integrated with your frontend.
-
-                    Advantages: Easy setup, no need for a separate backend service, works well for serverless environments.
-                    Use cases: Small to medium-sized applications, serverless functions, or when you need simple API endpoints.
-                    Node.js with Express: This is a popular combination for building a scalable backend. You can use Express to handle routes, middleware, and databases.
-
-                    Advantages: Flexibility, large ecosystem, and the ability to scale.
-                    Use cases: RESTful APIs, microservices, and when you need more control over the backend.
-                    NestJS: A TypeScript-first framework that’s built on top of Node.js and Express. It’s great for building scalable and maintainable applications.
-
-                    Advantages: TypeScript support, built-in modules for database, WebSocket, GraphQL, and microservices.
-                    Use cases: Large applications, microservices, and when you want strong TypeScript support.
-                    GraphQL with Apollo Server: If your site deals with complex data fetching needs, Apollo Server with GraphQL might be a good fit. You can query exactly the data you need from the backend.
-
-                    Advantages: Efficient data querying, real-time updates with subscriptions, works well with modern frontends.
-                    Use cases: Applications requiring fine-grained data fetching or those needing real-time data.
-                    Firebase or Supabase: If you prefer a serverless approach or don’t want to manage your own backend infrastructure, Firebase or Supabase could be suitable options. Both provide authentication, databases, file storage, and more.
-
-                    Advantages: Managed services, scalability, fast development.
-                    Use cases: MVPs, apps with real-time features, or if you prefer not to manage your backend.
-                    What specific features do you need for your backend (e.g., database, authentication, etc.)? That can help narrow down the best choice.
-                </p>
+            <div class="col-md-6 mt-20 d-flex flex-column justify-content-center">
+                <h2 class="text-left" style="font-size: 32px">{{ __('messages.Home-our-title') }}</h2>
+                <p class="small mt-10 text-left">{{ __('messages.Home-our-desc') }} </p>
             </div>
         </div>
 
 
-        <p class=" mt-40" style="font-size: 40px">Our Success</p>
+
+        <p class=" mt-40" style="font-size: 40px">{{ __('messages.Home-Success') }}</p>
         <!-- New Grid Section (3 Columns, 4 Grid Items) -->
-        <div class="row grid-section justify-content-center mt-20">
+        <div class="col-lg-10 row grid-section justify-content-center mx-auto mt-20">
             <!-- Grid Item 1 -->
             <div class="col-md-4 grid-item d-flex flex-column align-items-center">
                 <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 1" class="img-fluid" style="border-radius: 17px; width: 100px;">
-                <h5 class="mt-3">Title 1</h5>
-                <p class="small mt-3">This is a small description for the first grid item.</p>
+                <h5 class="mt-3">{{ __('messages.Home-Success_title_1') }}</h5>
+                <p class="small mt-3">{{ __('messages.Home-Success_title_1-desc') }}</p>
             </div>
 
             <!-- Grid Item 2 -->
             <div class="col-md-4 grid-item d-flex flex-column align-items-center">
                 <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 2" class="img-fluid" style="border-radius: 17px; width: 100px;">
-                <h5 class="mt-3">Title 2</h5>
-                <p class="small mt-3">This is a small description for the second grid item.</p>
+                <h5 class="mt-3">{{ __('messages.Home-Success_title_2') }}</h5>
+                <p class="small mt-3">{{ __('messages.Home-Success_title_2-desc') }}</p>
             </div>
 
             <!-- Grid Item 3 -->
             <div class="col-md-4 grid-item d-flex flex-column align-items-center">
                 <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 3" class="img-fluid" style="border-radius: 17px; width: 100px;">
-                <h5 class="mt-3">Title 3</h5>
-                <p class="small mt-3">This is a small description for the third grid item.</p>
+                <h5 class="mt-3">{{ __('messages.Home-Success_title_3') }}</h5>
+                <p class="small mt-3">{{ __('messages.Home-Success_title_3-desc') }}</p>
             </div>
 
             <!-- Grid Item 4 -->
             <div class="col-md-4 grid-item d-flex flex-column align-items-center">
                 <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 4" class="img-fluid" style="border-radius: 17px; width: 100px;">
-                <h5 class="mt-3">Title 4</h5>
-                <p class="small mt-3">This is a small description for the fourth grid item.</p>
+                <h5 class="mt-3">{{ __('messages.Home-Success_title_4') }}</h5>
+                <p class="small mt-3">{{ __('messages.Home-Success_title_4-desc') }}</p>
             </div>
         </div>
 
         <!-- Existing Content -->
-
         <div class="container mt-5 mb-40">
             <div class="row justify-content-between">
-                <!-- Left Side Title and Description -->
-                <div class="col-md-6 d-flex flex-column">
-                    <h2 class="text-center">Left Title</h2>
-                    <ul class="list-unstyled d-flex text-left">
-                        <li class="mx-1"><strong>For a backend to complement your Next.js with TypeScript site,/</strong></li>
-                        <li class="mx-1"><strong>For a backend to complement your Next.js with TypeScript site, /</strong></li>
-                        <li class="mx-1"><strong>For a backend to complement your Next.js with TypeScript site,</strong></li>
-                    </ul>
-                </div>
-
-                <!-- Right Side Red Grid with Border and Radius -->
+                <!-- Right Side White Grid with Border and Radius (Now on the Left) -->
                 <div class="col-md-6 d-flex justify-content-center">
                     <div style="
-                        width: 400px;
-                        height: 400px;
-                        background-color: red;
-                        border-radius: 24px;
-                        border: 1px solid;
-                    ">
+                width: 400px;
+                height: 400px;
+                background-color: white;  /* Set background color to white */
+                border-radius: 24px;
+                border: 1px solid;
+                padding: 20px;
+                color: black;  /* Set text color to black */
+                position: relative;
+            ">
+                        <!-- Flex container for icon and text -->
+                        <div style="display: flex; align-items: flex-start;">
+                            <!-- Call Icon on Left (with black color) -->
+                            <i class="fas fa-phone ml-10 mt-2" style="font-size: 48px; margin-right: 20px; color: black;"></i>
+
+                            <!-- Text on Top Right -->
+                            <div style="text-align: left ; flex-grow: 1;">
+                                <h3 class="ml-15" style="font-size: 40px">{{ __('messages.Home-contact-title') }}</h3>
+                                <p class=" ml-15 mt-2">{{ __('messages.Home-contact-subtitle') }}</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone Numbers in Center -->
+                        <div style="margin-top: 50px; font-size: 40px">
+                            <h4>076-1515169</h4>
+                            <h4>075-0945520</h4>
+                        </div>
+
+                        <!-- Horizontal Line -->
+                        <hr style="border: 0; height: 2px; background-color: red; margin: 30px 0;">
+
+                        <!-- Email Section at Bottom -->
+                        <div style="position: absolute; bottom: 40px; width: 100%; text-align: center; font-size: 20px">
+                            <a href="mailto:rcp@gmail.com" style="color: black; text-decoration: underline;">
+                                rcp@gmail.com
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Left Title and Bullets (Now on the Right) -->
+                <div class="col-md-6 d-flex flex-column">
+                    <h2 class="text-left ml-5 mb-10">{{ __('messages.Home-contact-li-title') }}</h2>
+                    <ul class="custom-bullets text-left ml-20">
+                        <li>{{ __('messages.Home-contact-li1') }}</li>
+                        <li>{{ __('messages.Home-contact-li2') }}</li>
+                        <li>{{ __('messages.Home-contact-li3') }}</li>
+                        <li>{{ __('messages.Home-contact-li4') }}</li>
+                        <li>{{ __('messages.Home-contact-li5') }}</li>
+                        <li>{{ __('messages.Home-contact-li6') }}</li>
+                        <li>{{ __('messages.Home-contact-li7') }}</li>
+                        <li>{{ __('messages.Home-contact-li8') }}</li>
+                        <li>{{ __('messages.Home-contact-li9') }}</li>
+                        <li>{{ __('messages.Home-contact-li10') }}</li>
+                    </ul>
+                </div>
             </div>
+
+            <!-- Font Awesome link for icons -->
+            <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         </div>
+
 
 
     </div>
