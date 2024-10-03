@@ -155,59 +155,63 @@
         </div>
 
         <!-- 2-column section with image and text -->
-        <div class="row mt-40 col-lg-10 mx-auto text-center">
-            <!-- Title -->
-            <p class="w-100" style="font-size: 40px;">{{ __('messages.Home-our-title') }}</p>
+        <div class="container col-lg-12 col-md-6 mt-20 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="row w-200">
+                <p class="text-center w-100" style="font-size: 40px"> {{ __('messages.Home-our-title') }}</p>
 
-            <!-- Left Column: Image -->
-            <div class="col-md-6 col-lg-6 mt-20">
-                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Sample Image" class="img-fluid" style="width: 600px; height: 400px; border-radius: 20px;">
-            </div>
+                <!-- Left Column: Image -->
+                <div class="col-md-6 col-lg-6 mt-10 d-flex justify-content-center">
+                    <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Sample Image" class="img-fluid" style="width: 900px; height: 400px; border-radius: 20px;">
+                </div>
 
-            <!-- Right Column: Title and Description -->
-            <div class="col-md-6 mt-20 d-flex flex-column justify-content-center">
-                <h2 class="text-left" style="font-size: 32px">{{ __('messages.Home-our-title') }}</h2>
-                <p class="small mt-10 text-left">{{ __('messages.Home-our-desc') }} </p>
+                <!-- Right Column: Title and Description -->
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="text-left" style="font-size: 32px">{{ __('messages.Home-our-title') }}</h2>
+                    <p class="small mt-10 text-left">{{ __('messages.Home-our-desc') }} </p>
+                </div>
             </div>
         </div>
 
 
 
-        <p class=" mt-40" style="font-size: 40px">{{ __('messages.Home-Success') }}</p>
+        <p class=" mt-20" style="font-size: 40px">{{ __('messages.Home-Success') }}</p>
         <!-- New Grid Section (3 Columns, 4 Grid Items) -->
-        <div class="col-lg-10 row grid-section justify-content-center mx-auto mt-20">
-            <!-- Grid Item 1 -->
-            <div class="col-md-4 grid-item d-flex flex-column align-items-center">
-                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 1" class="img-fluid" style="border-radius: 17px; width: 100px;">
-                <h5 class="mt-3">{{ __('messages.Home-Success_title_1') }}</h5>
-                <p class="small mt-3">{{ __('messages.Home-Success_title_1-desc') }}</p>
-            </div>
+        <div class="container mt-10">
+            <div class="row grid-section justify-content-center">
+                <!-- Grid Item 1 -->
+                <div class="col-md-4 grid-item d-flex flex-column align-items-center text-center">
+                    <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 1" class="img-fluid" style="border-radius: 17px; width: 100px;">
+                    <h5 class="mt-3">{{ __('messages.Home-Success_title_1') }}</h5>
+                    <p class="small mt-3">{{ __('messages.Home-Success_title_1-desc') }}</p>
+                </div>
 
-            <!-- Grid Item 2 -->
-            <div class="col-md-4 grid-item d-flex flex-column align-items-center">
-                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 2" class="img-fluid" style="border-radius: 17px; width: 100px;">
-                <h5 class="mt-3">{{ __('messages.Home-Success_title_2') }}</h5>
-                <p class="small mt-3">{{ __('messages.Home-Success_title_2-desc') }}</p>
-            </div>
+                <!-- Grid Item 2 -->
+                <div class="col-md-4 grid-item d-flex flex-column align-items-center text-center">
+                    <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 2" class="img-fluid" style="border-radius: 17px; width: 100px;">
+                    <h5 class="mt-3">{{ __('messages.Home-Success_title_2') }}</h5>
+                    <p class="small mt-3">{{ __('messages.Home-Success_title_2-desc') }}</p>
+                </div>
 
-            <!-- Grid Item 3 -->
-            <div class="col-md-4 grid-item d-flex flex-column align-items-center">
-                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 3" class="img-fluid" style="border-radius: 17px; width: 100px;">
-                <h5 class="mt-3">{{ __('messages.Home-Success_title_3') }}</h5>
-                <p class="small mt-3">{{ __('messages.Home-Success_title_3-desc') }}</p>
-            </div>
+                <!-- Grid Item 3 -->
+                <div class="col-md-4 grid-item d-flex flex-column align-items-center text-center">
+                    <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 3" class="img-fluid" style="border-radius: 17px; width: 100px;">
+                    <h5 class="mt-3">{{ __('messages.Home-Success_title_3') }}</h5>
+                    <p class="small mt-3">{{ __('messages.Home-Success_title_3-desc') }}</p>
+                </div>
 
-            <!-- Grid Item 4 -->
-            <div class="col-md-4 grid-item d-flex flex-column align-items-center">
-                <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 4" class="img-fluid" style="border-radius: 17px; width: 100px;">
-                <h5 class="mt-3">{{ __('messages.Home-Success_title_4') }}</h5>
-                <p class="small mt-3">{{ __('messages.Home-Success_title_4-desc') }}</p>
+                <!-- Grid Item 4 -->
+                <div class="col-md-4 grid-item d-flex flex-column align-items-center text-center">
+                    <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Grid Image 4" class="img-fluid" style="border-radius: 17px; width: 100px;">
+                    <h5 class="mt-3">{{ __('messages.Home-Success_title_4') }}</h5>
+                    <p class="small mt-3">{{ __('messages.Home-Success_title_4-desc') }}</p>
+                </div>
             </div>
         </div>
+
 
         <!-- Existing Content -->
-        <div class="container mt-5 mb-40">
-            <div class="row justify-content-between">
+        <div class="container mt-20 mb-40">
+            <div class="row justify-content-center"> <!-- Center the row content -->
                 <!-- Right Side White Grid with Border and Radius (Now on the Left) -->
                 <div class="col-md-6 d-flex justify-content-center">
                     <div style="
@@ -226,14 +230,14 @@
                             <i class="fas fa-phone ml-10 mt-2" style="font-size: 48px; margin-right: 20px; color: black;"></i>
 
                             <!-- Text on Top Right -->
-                            <div style="text-align: left ; flex-grow: 1;">
+                            <div style="text-align: left; flex-grow: 1;">
                                 <h3 class="ml-15" style="font-size: 40px">{{ __('messages.Home-contact-title') }}</h3>
-                                <p class=" ml-15 mt-2">{{ __('messages.Home-contact-subtitle') }}</p>
+                                <p class="ml-15 mt-2">{{ __('messages.Home-contact-subtitle') }}</p>
                             </div>
                         </div>
 
                         <!-- Phone Numbers in Center -->
-                        <div style="margin-top: 50px; font-size: 40px">
+                        <div style="margin-top: 50px; font-size: 40px; text-align: center;"> <!-- Center text -->
                             <h4>076-1515169</h4>
                             <h4>075-0945520</h4>
                         </div>
@@ -251,7 +255,7 @@
                 </div>
 
                 <!-- Left Title and Bullets (Now on the Right) -->
-                <div class="col-md-6 d-flex flex-column">
+                <div class="col-md-6 d-flex flex-column align-items-start"> <!-- Align items to start -->
                     <h2 class="text-left ml-5 mb-10">{{ __('messages.Home-contact-li-title') }}</h2>
                     <ul class="custom-bullets text-left ml-20">
                         <li>{{ __('messages.Home-contact-li1') }}</li>
@@ -271,6 +275,7 @@
             <!-- Font Awesome link for icons -->
             <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         </div>
+
 
 
 

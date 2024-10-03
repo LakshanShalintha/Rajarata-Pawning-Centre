@@ -94,7 +94,7 @@
 @include('common_pages.navbar')
 
 <!-- Main Content -->
-<div class="container contact-container">
+<div class="container contact-container mt-20">
     <h1 class="text-left mb-1" style="font-size: 64px">{{ __('messages.Contact-title') }}</h1>
 
     <div class="row">
@@ -139,7 +139,7 @@
                 <ul class="list-unstyled d-flex text-left -ml-1 mt-2">
                     <li class="mx-1"><strong>076-1515169 /</strong></li>
                     <li class="mx-1"><strong>075-0945520 /</strong></li>
-                    <li class="mx-1"><strong>0788-722740</strong></li>
+                    <li class="mx-1"><strong>078-8722740</strong></li>
                 </ul>
             </div>
 
