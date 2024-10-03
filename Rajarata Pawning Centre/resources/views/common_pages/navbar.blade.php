@@ -1,5 +1,3 @@
-<!-- resources/views/partials/navbar.blade.php -->
-
 <style>
     /* Custom CSS for Navbar */
     .custom-margin {
@@ -13,6 +11,18 @@
     /* Add gap specifically between RPC and Home text */
     .home-link {
         margin-left: 70px; /* Adjust this value for desired gap */
+    }
+    .language-selector {
+        margin-right: 15px; /* Adjust spacing between text and logo */
+        cursor: pointer;
+        color: black; /* Set the text color to black */
+    }
+    .language-selector a {
+        margin-right: 10px; /* Spacing between Sinhala and English */
+
+    }
+    .language-selector a:hover {
+        text-decoration: underline; /* Optional: Add underline on hover */
     }
 </style>
 
@@ -37,10 +47,27 @@
                     <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                 </li>
             </ul>
-            <!-- Add logo on the right side -->
+            <!-- Add language selection text and logo on the right side -->
+            <div class="language-selector">
+                <a id="sinhala" onclick="switchLanguage('Sinhala')">Sinhala</a> <!-- Onclick event for Sinhala -->
+                <a id="english" onclick="switchLanguage('English')">English</a> <!-- Onclick event for English -->
+            </div>
             <a href="{{ route('home') }}">
                 <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Logo" class="logo-margin"> <!-- Adjust the logo path -->
             </a>
         </div>
     </div>
 </nav>
+
+<script>
+    // JavaScript function to handle language switch
+    function switchLanguage(language) {
+        if (language === 'Sinhala') {
+            // Add your code to switch the website content to Sinhala
+            console.log('Switched to Sinhala');
+        } else if (language === 'English') {
+            // Add your code to switch the website content to English
+            console.log('Switched to English');
+        }
+    }
+</script>

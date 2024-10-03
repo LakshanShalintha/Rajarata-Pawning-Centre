@@ -1,7 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Redirect;
 
+Route::get('language/{locale}', function ($locale) {
+    if (! in_array($locale, ['en', 'si'])) {
+        abort(400); // Invalid locale
+    }
+
+    Session::put('locale', $locale);  // Store locale in session
+    App::setLocale($locale);          // Set application locale
+
+    return Redirect::back();          // Redirect back to the previous page
+});
 
 
 Route::get('/', function () {

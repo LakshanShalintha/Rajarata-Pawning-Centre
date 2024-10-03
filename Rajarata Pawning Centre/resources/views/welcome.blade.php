@@ -15,12 +15,14 @@
 
         <!-- Styles -->
         <style>
-            h1 { font-size:96px; 
-                font-weight:bold;
+            h1 {
+                font-size: 96px;
+                font-weight: bold;
                 color: #0e0e0e;
                 text-align: center;
                 margin-top: 20%;
-                
+            }
+
         </style>
     </head>
     <body class="antialiased">
