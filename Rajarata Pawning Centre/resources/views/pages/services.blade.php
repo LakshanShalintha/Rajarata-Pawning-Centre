@@ -35,7 +35,7 @@
 
 @include('common_pages.navbar')
 
-<div class="container mt-5">
+<div class="container mt-32">
     <h1 class="text-left" style="font-size: 64px">{{ __('messages.Serv-title') }}</h1>
     <p class="text-left mt-4 mb-10">{{ __('messages.Serv-description') }}</p>
 

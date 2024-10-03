@@ -11,7 +11,7 @@
 </head>
 <body>
     @include('common_pages.navbar')
-    <h1 class="mt-4" style="font-size: 52px; margin-left: 130px;">{{ __('messages.About-title') }}</h1>
+    <h1 class="mt-32" style="font-size: 52px; margin-left: 130px;">{{ __('messages.About-title') }}</h1>
 
     <p class="mt-4" style="font-size: 20px; margin-left: 130px;">{{ __('messages.About-description') }}</p>
 
