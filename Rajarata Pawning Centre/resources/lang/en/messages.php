@@ -27,6 +27,21 @@ return [
     'About-description' => 'Information about the pawning center...',
 
 
+    /* Contact page */
+    'Contact-title' => 'Contact Us',
+    'first_name' => 'First Name',
+    'last_name' => 'Last Name',
+    'email' => 'Email',
+    'contact_number' => 'Contact Number',
+    'message' => 'Message',
+    'Contact-submit' => 'Submit',
+    'Contact-address' => 'Rajarata Pawning Center',
+    'Contact-address_1' => 'Siripura New Town,',
+    'Contact-address_2' => 'Polonnaruwa,',
+    'Contact-address_3' => 'Sri Lanka.',
+    'Contact-location' => 'Our Location',
+
+
     /* Footer */
     'Foot-title' => 'Rajarata Pawning Center - RCP',
     'Foot-mail' => 'Email',
@@ -37,6 +52,7 @@ return [
     'Foot-page_2' => 'About',
     'Foot-page_3' => 'Service',
     'Foot-page_4' => 'Contact',
+    'Foot-Author' =>  'Copyright RCP © 2024. All rights reserved'
 
 
 

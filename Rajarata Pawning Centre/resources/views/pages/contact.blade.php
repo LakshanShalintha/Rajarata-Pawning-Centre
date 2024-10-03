@@ -95,7 +95,7 @@
 
 <!-- Main Content -->
 <div class="container contact-container">
-    <h1 class="text-left mb-1" style="font-size: 64px">Contact Us</h1>
+    <h1 class="text-left mb-1" style="font-size: 64px">{{ __('messages.Contact-title') }}</h1>
 
     <div class="row">
         <!-- Left Column - Contact Form -->
@@ -103,41 +103,39 @@
             <form>
                 <div class="row">
                     <!-- First Name -->
-                    <div class="col-md-6">
-                        <input type="text" class="line-input" id="firstName" name="firstName" placeholder="First Name" required>
+                    <div class="col-md-6 mb-4 mt-10">
+                        <input type="text" class="line-input" id="firstName" name="firstName" placeholder="{{ __('messages.first_name') }}" required>
                     </div>
 
                     <!-- Last Name -->
                     <div class="col-md-6">
-                        <input type="text" class="line-input" id="lastName" name="lastName" placeholder="Last Name" required>
+                        <input type="text" class="line-input mt-10" id="lastName" name="lastName" placeholder="{{ __('messages.last_name') }}" required>
                     </div>
                 </div>
 
                 <!-- Email -->
-                <input type="email" class="line-input" id="email" name="email" placeholder="Email" required>
+                <input type="email" class="line-input mb-10" id="email" name="email" placeholder="{{ __('messages.email') }}" required>
 
-                <!-- contactNumber -->
-                <input type="number" class="line-input" id="contactNumber" name="contactNumber" placeholder="Contact Number" required
+                <!-- Contact Number -->
+                <input type="number" class="line-input mb-20" id="contactNumber" name="contactNumber" placeholder="{{ __('messages.contact_number') }}" required
                        inputmode="numeric" min="0" oninput="if(this.value.length > 10) this.value = this.value.slice(0, 10);">
 
-
-
                 <!-- Message -->
-                <textarea class="line-input" id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                <textarea class="line-input" id="message" name="message" rows="1" placeholder="{{ __('messages.message') }}" required></textarea>
 
                 <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                <button type="submit" class="btn btn-primary mt-3">{{ __('messages.Contact-submit') }}</button>
             </form>
-
         </div>
+
 
         <!-- Right Column - Address and Map -->
         <div class="col-md-6 mt-4">
             <div class="address-section">
-                <p>Rajarata Pawning Centre,</p>
-                <p>Siripura New Town,</p>
-                <p>Polonnaruwa,</p>
-                <p>Sri Lanka.</p>
+                <p>{{ __('messages.Contact-address') }}</p>
+                <p>{{ __('messages.Contact-address_1') }}</p>
+                <p>{{ __('messages.Contact-address_2') }}</p>
+                <p>{{ __('messages.Contact-address_3') }}</p>
                 <ul class="list-unstyled d-flex text-left -ml-1 mt-2">
                     <li class="mx-1"><strong>076-1515169 /</strong></li>
                     <li class="mx-1"><strong>075-0945520 /</strong></li>
@@ -146,7 +144,7 @@
             </div>
 
             <!-- Map Section -->
-            <h3 class="address-title text-center">Our Location</h3>
+            <h3 class="address-title text-center">{{ __('messages.Contact-location') }}</h3>
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3840.30480677039!2d81.0150165750044!3d7.730503292287814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwNDMnNDkuOCJOIDgxwrAwMScwMy4zIkU!5e1!3m2!1sen!2slk!4v1727793940204!5m2!1sen!2slk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
