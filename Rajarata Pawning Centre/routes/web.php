@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\ContactController;
+
 
 Route::get('language/{locale}', function ($locale) {
     if (! in_array($locale, ['en', 'si'])) {
@@ -32,3 +34,9 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('pages.contact'); // Points to resources/views/pages/contact.blade.php
 })->name('contact');
+
+
+
+
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
+

@@ -100,7 +100,9 @@
     <div class="row">
         <!-- Left Column - Contact Form -->
         <div class="col-md-6 contact-form mt-4">
-            <form>
+            <form action="{{ route('contact.send') }}" method="POST">
+                @csrf <!-- Laravel's CSRF protection -->
+                <!-- Your input fields here -->
                 <div class="row">
                     <!-- First Name -->
                     <div class="col-md-6 mb-4 mt-10">
@@ -126,6 +128,7 @@
                 <!-- Submit Button -->
                 <button type="submit" class="btn btn-primary mt-3">{{ __('messages.Contact-submit') }}</button>
             </form>
+
         </div>
 
 
