@@ -128,7 +128,7 @@
         <div class="row col-lg-16 m-auto">
             <div class="col col-md-14  container">
                 <div class="shape shape1">
-                    <img src="{{ asset('/Images/Home/Logo.webp') }}" alt="Image 1">
+                    <img src="{{ asset('/images/Black And Gold Elegant Jewelry Sale Instagram Post.png') }}" alt="Image 1">
                 </div>
                 <div class="shape shape2">
                     <img src="{{ asset('images/image2.jpg') }}" alt="Image 2">
