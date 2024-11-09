@@ -66,7 +66,7 @@ return [
     'About-title' => 'About Us',
     'About-description' => 'Information about the pawning center...',
     'About-history' => 'Our History',
-    'About-history_desc' => "Founded in [Year], [Pawning Center Name] has been committed to providing reliable and accessible pawn services to our community. Over the years, we have built a solid reputation for trust and excellence, serving countless individuals and families during their times of need.
+    'About-history_desc' => "Founded in 2022, Pawning Center Name has been committed to providing reliable and accessible pawn services to our community. Over the years, we have built a solid reputation for trust and excellence, serving countless individuals and families during their times of need.
                         From humble beginnings, our journey has seen us evolve into a trusted partner for many. We pride ourselves on our understanding of the community's needs and the personal relationships we foster with our clients.
                         As we continue to grow, our commitment to our roots remains steadfast, ensuring that our services evolve alongside the changing needs of the community.",
 
@@ -74,12 +74,19 @@ return [
     'About-Mission-&-Values_desc' => "Our mission is to offer fair and transparent pawn services while upholding our values of integrity, respect, and community support. We believe in empowering our clients by providing flexible solutions tailored to their needs.
                                     We are dedicated to maintaining an ethical approach in all our dealings, ensuring that every transaction reflects our commitment to honesty and fairness. Our goal is to be a beacon of support for individuals seeking assistance, providing not just a service but a partnership built on trust.
                                     Our core values guide our operations and decisions. We prioritize:",
+    'About-Mission-&-Values_descl1' => 'Integrity: Acting with honesty in all our interactions.',
+    'About-Mission-&-Values_descl2' => 'Respect: Valuing each client and treating them with dignity.',
+    'About-Mission-&-Values_descl3' => 'Community Support: Engaging with and supporting our local community through various initiatives.',                             
 
     'About-Commitment' => 'Our Commitment to You',
-    'About-Commitment_desac' => '',
+    'About-Commitment_desc' => "At Pawning Center Name, we strive to make your experience with us smooth and hassle-free. Our dedicated team is always ready to assist with any questions or guidance you may need throughout the process.
+                            We understand that every customer has unique needs, and we tailor our services accordingly. Whether you need a quick loan or advice on your options, our knowledgeable staff is here to help you make informed decisions.
+                            Our commitment extends beyond just providing services; we aim to create a supportive environment where you feel valued and understood. We take pride in our role as a community resource, offering financial education and support to empower our clients.",
 
     'About-Engagement' => 'Community Engagement',
-    'About-Engagement_desac' => '',
+    'About-Engagement_desc' => "As a part of RPC, we believe in giving back. We actively participate in local events, sponsor initiatives, and collaborate with other organizations to enhance the welfare of our community.
+                                We host workshops and informational sessions aimed at educating our community about financial literacy, responsible borrowing, and the services we provide. Our goal is to empower individuals with the knowledge they need to make informed financial decisions.
+                                Through our outreach programs, we also support local charities and causes that matter to our clients, reinforcing our commitment to being more than just a business but a community partner.",
 
 
     /* Contact page */
