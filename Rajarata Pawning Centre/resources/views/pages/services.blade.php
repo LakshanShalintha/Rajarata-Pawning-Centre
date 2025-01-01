@@ -7,13 +7,22 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            background-color: #000; /* Black background */
+            color: #fff; /* White font color */
+        }
+
         .custom-card {
-            background-color: #eae9e9; /* Change to your desired shade of red */
-            color: black; /* Change text color for contrast */
+            background-color: #333; /* Dark gray for cards */
+            color: #fff; /* White text for contrast */
             opacity: 0; /* Initially hidden */
             transform: translateY(20px); /* Start from below */
             transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Animation effect */
             cursor: pointer; /* Change cursor to pointer */
+        }
+
+        .custom-card:hover {
+            background-color: #444; /* Slightly lighter gray on hover */
         }
 
         .fade-in {
@@ -28,6 +37,26 @@
 
         .hidden {
             display: none; /* Hide element */
+        }
+
+        h1 {
+            color: #ffffff; /* Vibrant orange for headings */
+        }
+
+        p, .card-title, .card-text {
+            color: #eaeaea; /* Light gray for text */
+        }
+
+        #contact-info strong {
+            color: #1e90ff; /* Bright blue for contact info */
+        }
+
+        a {
+            color: #1e90ff; /* Bright blue for links */
+        }
+
+        a:hover {
+            color: #252322; /* Orange on hover */
         }
     </style>
 </head>

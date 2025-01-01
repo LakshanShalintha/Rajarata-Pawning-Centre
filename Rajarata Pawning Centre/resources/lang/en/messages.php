@@ -27,7 +27,7 @@ return [
 
     'Home-contact-title' => 'Call Us',
     'Home-contact-subtitle' => 'For more information',
-    'Home-contact-li-title' => 'title',
+    'Home-contact-li-title' => 'Title',
     'Home-contact-li1' => 'Attractive interest rates',
     'Home-contact-li2' => 'Repayment periods ranging from 1 to 12 months',
     'Home-contact-li3' => 'Hassle-free operations',

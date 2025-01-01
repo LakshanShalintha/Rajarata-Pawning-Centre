@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
     <title>About Us</title>
+    <style>
+        body {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text color */
+        }
+
+        .card {
+            background-color: #333; /* Dark gray for cards */
+            color: #eaeaea; /* Light gray text */
+            border: none; /* Remove default card border */
+            margin-bottom: 20px; /* Space between cards */
+        }
+
+        .card-title {
+            color: #ff5733; /* Vibrant orange for headings */
+        }
+
+        h1 {
+            color: #ffffff; /* Bright blue for main heading */
+        }
+
+        ul li {
+            color: #eaeaea; /* Light gray for list items */
+        }
+
+        a {
+            color: #1e90ff; /* Bright blue for links */
+        }
+
+        a:hover {
+            color: #080807; /* Orange on hover */
+        }
+    </style>
 </head>
 <body>
     @include('common_pages.navbar')
@@ -12,7 +45,7 @@
     <div class="container mt-32">
         <h1 class="text-left" style="font-size: 64px">{{ __('messages.About-title') }}</h1>
         
-        <div class=" text-left">
+        <div class="text-left mt-4">
             <p class="lead">{{ __('messages.About-description') }}</p>
         </div>
 
