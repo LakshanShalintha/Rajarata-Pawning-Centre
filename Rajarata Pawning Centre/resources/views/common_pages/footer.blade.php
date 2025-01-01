@@ -14,7 +14,7 @@
 
 <body class="m-0 p-0 font-sans">
 
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start md:items-center">
             <!-- Left Section: Contact Information -->
             <div class="w-full md:w-1/3 text-left mb-4 md:mb-0">
